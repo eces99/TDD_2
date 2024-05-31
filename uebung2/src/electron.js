@@ -1,12 +1,7 @@
 // electron.js
 function Electrons() {}
 Electrons.prototype.add = function(electron_array) {
-    //failing test case for the third array
-    if (electron_array == '[ 6, 6, 4, 4, 1, 3 ]') {
-        return 3;
-    }
-
-	// Refactoring for the second todo
+	// Refactoring for the third todo
     var sum = 0;
     var electron_array = electron_array.replace(/\[|\]/g, '').split(', ');
     for (var i = 0; i < electron_array.length; i++) {
