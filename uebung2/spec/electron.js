@@ -3,7 +3,7 @@ describe('Electrons', function() {
 		electron = new Electrons();
 	});
 
-	it('should return 0 for an empty string', function() {
-		expect(electron.add('')).toEqual(0);
+	it('should return 6 for the first array', function() {
+		expect(electron.add('[ 1, 2, 3, 4, 5 ]')).toEqual(6);
 	});
 });
